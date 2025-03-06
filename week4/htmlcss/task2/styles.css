@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: rgb(28, 86, 67);
+
+    margin-top: 30px;
+
+    
+    
+}
+
+.container{
+    
+    border: 2px solid rgb(255, 255, 255);
+    width: 50%;
+    margin: 0 auto;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px;
+   
+    
+}
+.headline{
+    text-align: center;
+}
+.inputcont{
+    display: inline-block;
+    
+    
+   width: 180px;
+   padding: 5px 10px;
+
+   
+ 
+    
+
+}
+
+.footer{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    margin-top: 50px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+span{
+    color: orange;
+}
