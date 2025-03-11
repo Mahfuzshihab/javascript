@@ -125,6 +125,11 @@ Write a function `filterHighRatedMovies(jsonString)` that:
 
 // Your code here
 
+
+
+
+
+
 /* Task 8
 Define an object named `shoppingCart` with:
 - `items` (an array of product objects, each with `name` and `price`)

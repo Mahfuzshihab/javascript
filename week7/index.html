@@ -3,38 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Mahfuz Shihab</title>
+    <title>Mahfuz Shihab</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/139908e28d.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <!-- Navbar -->
-
-    <section>
+    <!-- Header -->
+    <header>
+      <h1>Mahfuz Shihab</h1>
       <nav>
-        <div><i class="fa-solid fa-bars"></i></div>
-        <div class="navbutton">
-          <div>
-            
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-          </div>
-
-        
-            <div>
-              <button class="buttons">About Me</button>
-              <button class="buttons">Hire Me</button>
-            </div>
-          
-        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
       </nav>
-    </section>
 
+      <button id="darkModeBtn" class="btn">Dark Mode</button>
+    </header>
 
-    
+    <!-- Modal Button -->
+    <div class="content">
+      <h1>Welcome to the page</h1>
+      <p>My Modal is here</p>
+      <button id="Showbtn" class="btn">See Here</button>
+    </div>
+
+    <!-- Overlay Modal -->
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <h2>Overlay Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+          voluptatem aliquid fugiat deleniti impedit corrupti voluptas.
+        </p>
+        <button id="closeBtn" class="btn">Close</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <section class="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="./pngegg.png" alt="Profile Picture" />
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">Project 1</div>
+          <div class="project-card">Project 2</div>
+          <div class="project-card">Project 3</div>
+          <div class="project-card">Project 4</div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Mahfuz Shihab</p>
+      <button id="backToTopBtn" class="btn">Back To Top</button>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
