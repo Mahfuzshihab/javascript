@@ -10,3 +10,4 @@ const animalName = "Whiskers";
 
 const description = `The ${animalType} is named ${animalName}.`;
 console.log(description);
+console.log("hello");
