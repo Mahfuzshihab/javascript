@@ -10,7 +10,7 @@ After **2 seconds**, it should call `callback` with `"Hello, [name]!"`
 function delayedGreet(name, callback) {
     setTimeout(() => {
         callback ("Hello Alice");
-    },2);
+    },2000);
 }
 
 // Test Case
@@ -27,8 +27,12 @@ It should **wait 3 seconds** before calling the callback with:
 */
 
 function processOrder(orderNumber, callback) {
-    // Your code here
+    setTimeout(() => {
+        callback(`Order ${orderNumber} is ready for pickup.`);
+    }, 3000);
 }
+
+
 
 // Test Case
 processOrder(101, (message) => console.log(message));
@@ -44,13 +48,28 @@ If `validUser === false`, call the callback immediately with `"Invalid login"`
 */
 
 function loginUser(username, validUser, callback) {
-    // Your code here
-}
+    
+
+        if (validUser) {
+            setTimeout(() => {
+                callback(`Welcome, ${username}!`);
+            }, 1000);
+        } else {
+            callback("Invalid login");
+        }
+    }
+    
+
+    
+
+
+
+
 
 // Test Cases
 loginUser("Sam", true, (message) => console.log(message));
 // Expected: "Welcome, Sam!" (after 1 sec)
-loginUser("Alex", false, (message) => console.log(message));
+loginUser("Alex", false, (message) => console.log(message)); 
 // Expected: "Invalid login" (immediately)
 
 
@@ -63,7 +82,27 @@ If `shouldFail === true`, **reject after 2 seconds** with `"Error fetching user 
 */
 
 function fetchUserData(shouldFail) {
-    // Your code here
+    
+
+
+    {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (shouldFail) {
+                    reject("error fetching user data");
+                } else {
+                    resolve("user data retrieved");
+                }
+            }, 2000);
+        });
+    }
+    
+    
+
+
+
+
+
 }
 
 // Test Cases
@@ -83,7 +122,7 @@ Convert `processOrderPromise()` to return a promise chain:
 */
 
 function processOrderPromise() {
-    // Your code here
+   
 }
 
 // Test Case
@@ -172,3 +211,4 @@ fetchProductDetails(false).then(console.log).catch(console.error);
 // Expected: "Product details retrieved" (after 3 sec)
 fetchProductDetails(true).then(console.log).catch(console.error);
 // Expected: "Error loading product" (after 3 sec)
+

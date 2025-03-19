@@ -10,7 +10,7 @@ showBtn.addEventListener("click", () => {
   overlay.style.opacity = "0";
   setTimeout(() => {
     overlay.style.opacity = "1";
-  }, 10);
+  }, 10000);
 });
 
 // Close Modal on Close Button Click
