@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Poppins;
+    text-align: center;
+  }
+
+  main{
+    border: 3px solid rgb(102, 25, 17);
+    border-radius: 10px;
+  }
+  
+  input {
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+  
+  #message {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  button:hover {
+    background-color: #2600ff;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #2600ff;
+  }
+  
+  h1 {
+    font-size: 44px;
+    font-weight: 500;
+    margin-top: 25vh;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  
+  h2 #balance {
+    color: rgb(255, 15, 27);
+  }
