@@ -1,7 +1,7 @@
 # Overall Refletion
 
-From this JS Course, I learned lots of important concepts like DOM, Array, Async are from them. Specially i enjoyed learning DOM, it gave new life to the static website.
-I faced challenges in logic and condition making because this was the first time I was learning JS. I watched videos on internet but all I knew only introduction.My teacher was very helpful. In the middle of the course, I missed some classes. After that, it became very tough for me to catch up on everything, and today, I’m still struggling with some. 
+From this JS Course, I learned lots of important concepts with the help of My teacher she was very helpful. Specially i enjoyed learning DOM, it gave new life to the static website.
+I faced challenges in logic and condition making because this was the first time I was learning JS. I watched videos on internet but all I knew only introduction. In the middle of the course, I missed some classes. After that, it became very tough for me to catch up on everything, and today, I’m still struggling with some. 
 
 ## Challenges for me
 
@@ -11,9 +11,8 @@ I faced challenges in logic and condition making because this was the first time
 
 ## Self-Assesment
 Knowledge About JS
-Before the course: 0.5/5
-
-After the course:  3.5/5
+- Before the course: 0.5/5
+- After the course:  3.5/5
 
 # Project Summery
 ### Throughout the course the topic i learend are 
