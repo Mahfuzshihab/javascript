@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+}
+
+
+#ordersContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em; 
+  }
+  
+  .order-item {
+    background-color: #D17B49; 
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+  
+    
+  }
+  
+
+  select{
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .remove-btn{
+    border: none;
+    background-color: #a25529;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 30px;
+    height: 30px;
+    cursor: pointer;
+
+  }
+
+
+

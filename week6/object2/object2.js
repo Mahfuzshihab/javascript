@@ -48,10 +48,10 @@ Write a function that returns only the restaurants with a rating of 4 or higher.
 
 
 const restaurants = [
-    {Name: 'Osteria dei Gusti', cuisineType: 'Italian', rating: 4.7},
-    {Name: 'Ravintola Yarsa', cuisineType: 'Nepalese', rating: 3.5},
-    {Name: 'Flät no 14', cuisineType: 'Finnish', rating: 4},
-    {Name: 'Skiffer Postipuisto', cuisineType: 'Mexican', rating: 3.7}
+    {Name: 'Casa del Sabor', cuisineType: 'Spanish', rating: 4.2},
+    {Name: 'Tokyo Bites', cuisineType: 'Japanese', rating: 3.8},
+    {Name: 'Le Petit Chef', cuisineType: 'French', rating: 4.5},
+    {Name: 'Grill & Chill', cuisineType: 'American', rating: 3.9}
 ]
 
 const higherRating = () => {
@@ -325,9 +325,9 @@ Write a function that finds the airport with the most daily flights.
 */
 
 const airports = [
+    {Name: 'Dubai Airport', Country: 'UAE', flightsPerDay: 400},
     {Name: 'Helsinki Airport', Country: 'Finland', flightsPerDay: 500},
-    {Name: 'Sharjah Airport', Country: 'UAE', flightsPerDay: 400},
-    {Name: 'Delhi Airport', Country: 'India', flightsPerDay: 600},
+    {Name: 'New Delhi Airport', Country: 'India', flightsPerDay: 600},
     {Name: 'Stockholm Airport', Country: 'Sweden', flightsPerDay: 350},
     {Name: 'Oslo Airport', Country: 'Norway', flightsPerDay: 270}
 ]

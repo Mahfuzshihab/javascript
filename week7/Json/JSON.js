@@ -125,7 +125,16 @@ Write a function `filterHighRatedMovies(jsonString)` that:
 
 // Your code here
 
-
+const filterHighRatedMovies = () => {
+    const jsonString = '[{"title": "Intersteller", "rating": 9.9}, {"title": "Black Panther", "rating": 7}, {"title": "The Watchmen", "rating": 10}]'
+    const cnvrtArray = JSON.parse(jsonString)
+    cnvrtArray.forEach(cnvrt => {
+        if (cnvrt.rating > 8) {
+            console.log(cnvrt.title)
+        }
+    })
+}
+filterHighRatedMovies()
 
 
 
@@ -137,6 +146,16 @@ Convert `shoppingCart` into a JSON string and log it to the console.
 */
 
 // Your code here
+const shoppingCart = {
+    items: [
+        {Name: 'Mac', price: 1323.99},
+        {Name: 'Bag', price: 3.49},
+        {Name: 'Speaker', price: 35},
+    ]
+}
+
+const convertCart = JSON.stringify(shoppingCart)
+console.log(convertCart)
 
 /* Task 9
 Write a function `totalCartValue(jsonString)` that:
@@ -146,6 +165,16 @@ Write a function `totalCartValue(jsonString)` that:
 */
 
 // Your code here
+
+const totalCartValue = () => {
+    const jsonString = '{"items":[{"name":"Mac","price":1323.99},{"name":"Bag","price":3.49},{"name":"Speaker","price":35}]}'
+    const convertObjetc = JSON.parse(jsonString)
+    console.log(convertObjetc)
+    const totalPrice = convertObjetc.items.reduce((total, item) => total + item.price, 0)
+    console.log(totalPrice)
+}
+totalCartValue()
+
 
 /* Task 10
 Create an object named `gameProgress` with:
@@ -159,3 +188,16 @@ Log the updated object.
 */
 
 // Your code here
+
+const gameProgress = {
+    level: 1,
+    score: 50,
+    livesRemaining: 5
+}
+
+const convertGame = JSON.stringify(gameProgress)
+console.log(convertGame)
+const update = JSON.parse(convertGame)
+console.log(update)
+update.score += 100
+console.log(update)

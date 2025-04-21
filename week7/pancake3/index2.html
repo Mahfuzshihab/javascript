@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Orders</title>
+    <link rel="stylesheet" href="second.css" />
+</head>
+
+<body>
+    <div class="container">
+
+     
+        <h1>All Orders</h1>
+
+        <input type="text" id="searchInput" placeholder="Search orders" oninput="searchOrders()">
+   
+        <select id="sortSelect" onchange="sortOrders()">
+       
+            <option value="status">All Orders</option>
+            <option value="waiting">Waiting</option>
+            <option value="ready">Ready</option>
+            <option value="delivered">Delivered</option>
+        </select>
+
+       
+        <div id="ordersContainer"></div>
+    </div>
+
+    <script src="second.js"></script>
+</body>
+
+</html>

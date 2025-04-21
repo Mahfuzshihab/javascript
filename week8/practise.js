@@ -36,8 +36,19 @@ Expected:
 */
 
 function task2() {
-    // Code here
+    const MAX_USERS = 100;
+    let currentUsers = 10;
+    
+    try {
+        MAX_USERS = 200;
+    } catch (error) {
+        console.log("Error: " + error.message);
+    }
+    console.log(MAX_USERS); 
+    console.log(currentUsers);
 }
+task2()    
+
 
 /* Task 3: Create and Log an Object
 /*
@@ -105,10 +116,12 @@ greetUser("Bob") → "Hello, Bob!"
 function greetUser(name) {
    
 
-
+    return `Hello, ${name}!`
+}
+console.log(greetUser("Bob"));
 
     
-}
+
 
 /* Task 7: Refactor Unclear Code
 /*
@@ -122,8 +135,15 @@ After:
 */
 
 function checkNumber(n) {
-    // Code here
-}
+   
+        if (number < 0) {
+            return 'negative';
+        } else {
+            return 'positive';
+        }
+    }
+    console.log(Check(20));
+
 
 /* Task 8: Fix Formatting
 /*
@@ -140,3 +160,4 @@ function example() {
     let x = 10;
     console.log(x);
 }
+example()
