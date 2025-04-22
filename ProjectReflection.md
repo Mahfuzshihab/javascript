@@ -15,7 +15,7 @@ Knowledge About JS
 - After the course:  3.5/5
 
 # Project Summery
-### Throughout the course the topic i learend are 
+### Throughout the course the topic i learned are 
 
 
 * DATA & Variables
